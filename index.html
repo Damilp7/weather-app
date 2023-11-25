@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid cont">
+  <section class="main">
+    <section class="inputs">
+      <input type="text" placeholder="Enter your name..." id="nameinput" class="form-control">
+      <input type="text" placeholder="Enter your location..." id="cityinput" class="form-control">
+      <input type="submit" value="Check" id="add" class="btn btn-dark">
+      <!-- <button placeholder="submit" id="add"></button> -->
+    </section>
+
+    <section class="display">
+      <div class="wrapper">
+        <h3 id="cityoutput"></h3>
+        <p id="description"></p>
+        <p id="temp"></p>
+        <p id="wind"></p>
+      </div>
+    </section>
+
+    <section class="division">
+      <input type="text" placeholder="Enter your country..." id="country" class="form-control">
+      <input type="submit" value="Facts" id="btn2" class="btn btn-dark">
+    </section>
+
+    <section class="factoutput">
+      
+    </section>
+
+  </section>
+
+</div>
+  <script src="app.js"></script>
+</body>
+</html>

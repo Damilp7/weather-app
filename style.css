@@ -1,0 +1,51 @@
+#nameinput, #cityinput, #country{
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 500px; 
+}
+
+.btn{
+  margin-left: 20px;
+}
+
+.cont{
+ background-color: purple;
+}
+
+.main{
+padding: 3rem;
+}
+
+.inputs{
+margin: 1rem;
+}
+
+.display{
+text-align: center;
+color: white;
+/* border: 1px solid white; */
+border-radius: 10px;
+padding: 1rem;
+}
+
+.wrapper{
+font-family: cursive;
+}
+
+#cityoutput{
+
+}
+
+p{
+
+}
+
+.division{
+
+}
+
+.btn{
+  margin-top: 20px;
+  padding: .5rem 1.5rem;
+  border-radius: 30%;
+}
