@@ -44,15 +44,15 @@ let btn2 = document.querySelector('#btn2');
 let country = document.querySelector('#country')
 
 btn2.addEventListener('click', () =>{
-  fetch("https://api-ninjas.com/api/country")
-  .then(response => {
-    response.json()
+  fetch("https://api-ninjas.com/api/country" + country.value)
+  .then(response => response.json())
 
-    .then(data => {
+  .then(data => {
       console.log(data)
       let countryval = data['name']
       let unemployed = data['max_unemployment']
       parag.innerHTML = `${countryval}'s maximum unemployment rate according to recent data is ${unemployed}%`
-    })
   })
+
+  .catch(err => alert('Oops! We are currently unable to fetch data for your country.'))
 })
