@@ -1,11 +1,16 @@
-#nameinput, #cityinput, #country{
-  margin-top: 20px;
-  margin-left: 20px;
+#nameinput, #cityinput{
   max-width: 500px; 
+  margin: auto;
 }
 
-.btn{
-  margin-left: 20px;
+#cityinput{
+  margin-top: 20px;
+}
+
+#country{
+  max-width: 480px;
+  margin: auto;
+  padding: 0.5rem;
 }
 
 .cont{
@@ -15,6 +20,13 @@
 .main{
 padding: 3rem;
 }
+
+#page-heading{
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .inputs{
 margin: 1rem;
@@ -48,4 +60,8 @@ p{
   margin-top: 20px;
   padding: .5rem 1.5rem;
   border-radius: 30%;
+}
+
+#btn2{
+  margin-left: 20px;
 }
