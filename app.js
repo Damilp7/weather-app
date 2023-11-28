@@ -42,9 +42,10 @@ let parag = document.createElement('p');
 facts.append(parag);
 let btn2 = document.querySelector('#btn2');
 let country = document.querySelector('#country')
+let apik2 = "6563b65dced6be7391a6d090-b10778d42e9d"
 
 btn2.addEventListener('click', () =>{
-  fetch("https://api-ninjas.com/api/country" + country.value)
+  fetch("https://api-ninjas.com/api/country"+ country.value+'&appid='+apik2)
   .then(response => response.json())
 
   .then(data => {

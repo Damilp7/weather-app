@@ -14,7 +14,13 @@
 }
 
 .cont{
- background-color: purple;
+  min-height: 100vh;
+  width: 100%;
+ background-color: black;
+ background-image: url(https://media0.giphy.com/media/PbOaO2fedzQLm/giphy.gif);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .main{
@@ -25,8 +31,28 @@ padding: 3rem;
   color: white;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 10px rgb(160, 3, 184),
+    0 0 10px rgb(160, 3, 184),
+    0 0 10px rgb(160, 3, 184),
+    0 0 10px rgb(160, 3, 184),
+    0 0 51px rgb(160, 3, 184);
 }
 
+#page-heading:hover{
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 10px rgb(3, 184, 42),
+    0 0 10px rgb(3, 184, 42),
+    0 0 10px rgb(3, 184, 42),
+    0 0 10px rgb(3, 184, 42),
+    0 0 51px rgb(3, 184, 42);
+}
 
 .inputs{
 margin: 1rem;
@@ -44,22 +70,14 @@ padding: 1rem;
 font-family: cursive;
 }
 
-#cityoutput{
-
-}
-
-p{
-
-}
-
-.division{
-
-}
-
 .btn{
   margin-top: 20px;
   padding: .5rem 1.5rem;
   border-radius: 30%;
+  background-color: rgb(160, 3, 184);
+  border-color: whitesmoke;
+  font-family: cursive;
+  font-size: 12px;
 }
 
 #btn2{
