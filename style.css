@@ -27,7 +27,7 @@
 padding: 3rem;
 }
 
-#page-heading{
+.page-heading{
   color: white;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -40,9 +40,11 @@ padding: 3rem;
     0 0 10px rgb(160, 3, 184),
     0 0 10px rgb(160, 3, 184),
     0 0 51px rgb(160, 3, 184);
+
+  margin-bottom: 15px;
 }
 
-#page-heading:hover{
+.page-heading:hover{
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
@@ -80,6 +82,7 @@ font-family: cursive;
   font-size: 12px;
 }
 
-#btn2{
-  margin-left: 20px;
+.center{
+  display: flex;
+  justify-content: center;
 }
