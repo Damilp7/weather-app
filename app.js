@@ -42,18 +42,32 @@ let parag = document.createElement('p');
 facts.append(parag);
 let btn2 = document.querySelector('#btn2');
 let country = document.querySelector('#country')
-let apik2 = "6563b65dced6be7391a6d090-b10778d42e9d"
+let parag2 = document.createElement ("p");
+facts.append(parag2);
+parag2.style.color = "red";
+parag2.style.backgroundColor = "white";
+parag2.style.textAlign = "center";
+parag.style.color = "white";
+parag.style.textAlign = "center";
+parag.style.marginTop = "20px";
+parag.style.backgroundColor = "#00800077";
+parag2.style.borderRadius = "10px";
 
-btn2.addEventListener('click', () =>{
-  fetch("https://api-ninjas.com/api/country"+ country.value+'&appid='+apik2)
-  .then(response => response.json())
 
-  .then(data => {
+btn2.addEventListener('click', () => {
+  fetch('https://www.boredapi.com/api/activity')
+  .then(res => {
+    console.log(res);
+    res.json()
+
+    .then(data => {
       console.log(data)
-      let countryval = data['name']
-      let unemployed = data['max_unemployment']
-      parag.innerHTML = `${countryval}'s maximum unemployment rate according to recent data is ${unemployed}%`
+      parag.textContent = data.activity
+    })
   })
-
-  .catch(err => alert('Oops! We are currently unable to fetch data for your country.'))
+  .catch(error => 
+    parag2.textContent = "Ouch! Brain Freeze!!!"
+  );
 })
+  
+
