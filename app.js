@@ -34,7 +34,7 @@ btn.addEventListener('click', function()
   .catch(err => alert('You entered Wrong city name'))
 })
 
-// Country Facts Section
+// Activity Suggestiions Section
 
 let division = document.querySelector(".division");
 let facts = document.querySelector('.factoutput')
@@ -50,8 +50,9 @@ parag2.style.textAlign = "center";
 parag.style.color = "white";
 parag.style.textAlign = "center";
 parag.style.marginTop = "20px";
-parag.style.backgroundColor = "#00800077";
+parag.style.backgroundColor = "rgba(0, 128, 0, 0.664)";
 parag2.style.borderRadius = "10px";
+parag.style.borderRadius = "10px";
 
 
 btn2.addEventListener('click', () => {
