@@ -67,7 +67,7 @@ btn2.addEventListener('click', () => {
     })
   })
   .catch(error => 
-    parag2.textContent = "Ouch! Brain Freeze!!!"
+    parag2.textContent = "Ouch! Brain Freeze!!! Will suggest something later."
   );
 })
   
